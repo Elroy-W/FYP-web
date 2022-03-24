@@ -1,0 +1,15 @@
+{
+    "result": [{
+            "original": "asset/img/test0.jpg",
+            "retouched": "asset/img/test0.jpg"
+        },
+        {
+            "original": "asset/img/test1.jpg",
+            "retouched": "asset/img/test1.jpg"
+        },
+        {
+            "original": "asset/img/test2.jpg",
+            "retouched": "asset/img/test2.jpg"
+        }
+    ]
+}
