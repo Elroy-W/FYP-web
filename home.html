@@ -54,31 +54,33 @@
 
 
     <div class="photo-upload">
-        <h4>Input Image for Retouching (MAX:10)</h4>
-        <input id="input-id" name="file-data" type="file">
-        <hr>
-        <div class="form-group">
-            <button class="btn btn-primary" type="submit">Submit</button>
-            <button class="btn btn-warning" type="reset">Reset</button>
-        </div>
-        <hr>
-        <script>
-            $(document).ready(function() {
-                // initialize with defaults
-                $("#input-id").fileinput();
+        <form method="get" action="result.html">
+            <h4>Input Image for Retouching (MAX:10)</h4>
+            <input id="input-id" name="file-data" type="file" multiple>
+            <hr>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                <button class="btn btn-warning" type="reset" value="reset">Reset</button>
+            </div>
+            <hr>
+            <script>
+                $(document).ready(function() {
 
-                // with plugin options
-                $("#input-id").fileinput({
-                    theme: 'fas',
-                    language: 'es',
-                    uploadUrl: '#',
-                    allowedFileExtensions: ['jpg', 'png'],
-                    maxFileSize: 10000,
-                    maxFilesNum: 10,
+                    $("#input-id").fileinput({
+                        theme: 'fas',
+                        language: 'es',
+                        allowedFileExtensions: ['jpg', 'png'],
+                        maxFileSize: 10000,
+                        maxFileCount: 10,
+                        showRemove: false,
+                        showUpload: false,
 
+
+                    });
                 });
-            });
-        </script>
+            </script>
+        </form>
+
     </div>
 
 

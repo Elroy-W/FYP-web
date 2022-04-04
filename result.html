@@ -46,9 +46,9 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Final Report</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="report.html">Final Report</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,11 +75,23 @@
     </table>
 
     <script type="text/javascript">
+        var str = location.search.substr(1);
+
+        function getValue(s, n) {
+            var t = str.split("&");
+            for (var i = 0; i < t.length; i++) {
+                if (t[i].split("=")[0] == n) {
+                    return t[i].split("=")[1];
+                }
+            }
+            return null;
+        }
         var resultImageList = new Array();
         var Ajax = function() {
+
             resultImageList = new Array();
             $.getJSON("asset/json/template.json", function(data) {
-                console.log(data);
+
                 $.each(data.result, function(i, item) {
                     $("#photo").append("<tr><td><img src=" + item.original + "></td><td><img src=" +
                         item.retouched + "></td></tr>");
