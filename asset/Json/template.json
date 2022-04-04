@@ -1,15 +1,16 @@
 {
     "result": [{
-            "original": "asset/img/test0.jpg",
-            "retouched": "asset/img/test0.jpg"
+            "original": "asset/img/09055_input.jpg",
+            "retouched": "asset/img/09055_output.jpg"
+
         },
         {
-            "original": "asset/img/test1.jpg",
-            "retouched": "asset/img/test1.jpg"
+            "original": "asset/img/09044_input.jpg",
+            "retouched": "asset/img/09044_output.jpg"
         },
         {
-            "original": "asset/img/test2.jpg",
-            "retouched": "asset/img/test2.jpg"
+            "original": "asset/img/09141_input.jpg",
+            "retouched": "asset/img/09141_output.jpg"
         }
     ]
 }
